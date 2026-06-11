@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um pequeno universo romântico criado especialmente para alguém muito importante."
+    />
+    <title>Um universo só nosso</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      defer
+    ></script>
+    <script src="js/config.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div class="loader" id="loader" aria-live="polite" aria-label="Tela de abertura">
+      <div class="loader-card">
+        <span class="loader-orbit" aria-hidden="true"></span>
+        <p id="loaderText">Inicializando sistema...</p>
+      </div>
+    </div>
+
+    <canvas class="heart-rain" id="heartRain" aria-hidden="true"></canvas>
+
+    <main id="conteudo" class="page-shell" tabindex="-1">
+      <section class="hero section-full" id="inicio" aria-label="Abertura do presente">
+        <div class="particles" id="particles" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Um pequeno universo</p>
+          <h1>Para a pessoa mais especial da minha vida ❤️</h1>
+          <p class="hero-subtitle">Existe uma coisa que eu queria te mostrar.</p>
+          <button class="primary-action" data-scroll-to="#envelope" type="button">
+            Abrir
+          </button>
+        </div>
+      </section>
+
+      <section class="story-section envelope-section" id="envelope" aria-labelledby="envelopeTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Começa aqui</p>
+          <h2 id="envelopeTitle">Uma carta esperando por você</h2>
+        </div>
+
+        <button
+          class="envelope-wrap reveal"
+          id="envelopeButton"
+          type="button"
+          aria-label="Abrir envelope"
+          aria-expanded="false"
+        >
+          <span class="envelope">
+            <span class="letter-peek">
+              <span>Para você</span>
+            </span>
+            <span class="envelope-back"></span>
+            <span class="envelope-left"></span>
+            <span class="envelope-right"></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-seal">❤️</span>
+          </span>
+        </button>
+      </section>
+
+      <section class="story-section letter-section" id="carta" aria-labelledby="letterTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Minha parte favorita</p>
+          <h2 id="letterTitle">Carta</h2>
+        </div>
+
+        <article class="love-letter reveal" aria-live="polite">
+          <div class="letter-paper">
+            <p class="letter-date" id="letterDate"></p>
+            <p class="typed-text" id="typedLetter"></p>
+            <div class="signature">
+              <span>Com amor ❤️</span>
+              <strong id="letterSignature">Matheus</strong>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="story-section memories-section" aria-labelledby="galleryTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nostalgia boa</p>
+          <h2 id="galleryTitle">Nossas Memórias</h2>
+        </div>
+
+        <div class="memory-grid" id="memoryGrid" aria-label="Galeria de memórias"></div>
+      </section>
+
+      <section class="story-section timer-section" aria-labelledby="timerTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Desde aquele dia</p>
+          <h2 id="timerTitle">Quanto tempo já compartilhamos</h2>
+        </div>
+
+        <div class="time-grid reveal" id="timeGrid" aria-live="polite">
+          <div><strong id="days">0</strong><span>Dias</span></div>
+          <div><strong id="hours">0</strong><span>Horas</span></div>
+          <div><strong id="minutes">0</strong><span>Minutos</span></div>
+          <div><strong id="seconds">0</strong><span>Segundos</span></div>
+        </div>
+      </section>
+
+      <section class="story-section reminders-section" aria-labelledby="remindersTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pequenos sinais</p>
+          <h2 id="remindersTitle">Coisas que me lembram você ❤️</h2>
+        </div>
+
+        <div class="reminder-grid" id="reminderGrid"></div>
+      </section>
+
+      <section class="story-section manual-section" aria-labelledby="manualTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Documento oficial</p>
+          <h2 id="manualTitle">Manual da Melhor Namorada do Mundo</h2>
+        </div>
+
+        <article class="manual-card reveal">
+          <div class="manual-topline">
+            <span>Arquivo raro</span>
+            <strong>v. amor infinito</strong>
+          </div>
+          <dl class="manual-list" id="manualList"></dl>
+        </article>
+      </section>
+
+      <section class="story-section stats-section" aria-labelledby="statsTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Dados muito científicos</p>
+          <h2 id="statsTitle">Estatísticas</h2>
+        </div>
+
+        <div class="stats-list reveal" id="statsList"></div>
+      </section>
+
+      <section class="story-section reasons-section" aria-labelledby="reasonsTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Alguns entre infinitos</p>
+          <h2 id="reasonsTitle">Alguns motivos pelos quais você é incrível</h2>
+        </div>
+
+        <div class="reason-grid" id="reasonGrid"></div>
+      </section>
+
+      <section class="story-section final-section" aria-labelledby="finalTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Surpresa final</p>
+          <h2 id="finalTitle">Um último pedacinho desse universo</h2>
+        </div>
+
+        <div class="final-moment reveal">
+          <button class="primary-action final-button" id="finalButton" type="button">
+            Abra apenas se estiver pronta ❤️
+          </button>
+          <p class="final-message" id="finalMessage" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="story-section keepsake-section" aria-labelledby="qrTitle">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Para guardar</p>
+          <h2 id="qrTitle">Guarde esta lembrança</h2>
+        </div>
+
+        <div class="qr-panel reveal">
+          <div id="qrcode" aria-label="QR Code com a URL atual do site"></div>
+          <p id="qrFallback"></p>
+        </div>
+      </section>
+
+      <section class="story-section print-section" aria-label="Salvar lembrança">
+        <button class="secondary-action reveal" id="printButton" type="button">
+          Salvar como PDF
+        </button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Feito com HTML, CSS, JavaScript e muito amor ❤️</p>
+      <p>Desenvolvido por Matheus</p>
+    </footer>
+
+    <button class="easter-egg frog-egg" type="button" aria-label="Sapinho escondido">🐸</button>
+    <button class="easter-egg capybara-egg" type="button" aria-label="Capivara escondida">🦫</button>
+    <button class="easter-egg cat-egg" type="button" aria-label="Foto surpresa do gato">🐱</button>
+    <button class="easter-egg moonwalk-egg" type="button" aria-label="Moonwalk escondido">
+      <span>♪</span>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="memory-modal" id="memoryModal" aria-label="Memória ampliada">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fechar modal">×</button>
+      <button class="modal-nav prev" id="modalPrev" type="button" aria-label="Memória anterior">
+        ‹
+      </button>
+      <figure>
+        <img id="modalImage" alt="" />
+        <figcaption id="modalCaption"></figcaption>
+      </figure>
+      <button class="modal-nav next" id="modalNext" type="button" aria-label="Próxima memória">
+        ›
+      </button>
+    </dialog>
+  </body>
+</html>
