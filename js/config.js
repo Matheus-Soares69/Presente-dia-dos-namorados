@@ -7,15 +7,10 @@ const CONFIG = {
   letterDate: "Dia dos Namorados",
   letter: `Suelen,
 
-eu remontei esse pequeno universo usando pedacinhos reais da nossa vida: nossas fotos bobas, nossos passeios, seu sorriso, o gato fiscalizando tudo, e ate uma participacao especial do Michael Jackson porque, convenhamos, isso tem muito a nossa cara.
+Fiz esse presente pensando em você, em todo o carinhho, amor e apoio que vc me deu durante todos esses anos juntos. Cada detalhezinho aqui é uma forma de agradecer por tudo isso e por ser a pessoa incrível que você é. Espero que cada parte desse presente te faça sorrir e sinta o quanto eu te amo.
 
-Eu gosto de olhar para essas imagens porque cada uma parece guardar um tipo diferente de saudade. Tem foto que me faz rir, foto que me deixa quietinho, foto que me lembra o quanto eu gosto do nosso jeito simples de existir juntos.
-
-Voce tem essa mistura rara de beleza, carinho, humor e presenca. Voce deixa os dias mais leves, os momentos mais memoraveis e ate as coisas comuns parecem ganhar um brilho diferente quando voce esta perto.
-
-Esse site nao e so uma pagina. E uma tentativa, feita com codigo e coracao, de dizer que voce importa muito para mim.
-
-Obrigado por ser voce. Obrigado por ser meu amor.`,
+Com todo meu amor,
+Matheus`,
   memories: [
     {
       title: "Nosso dia no parque",
