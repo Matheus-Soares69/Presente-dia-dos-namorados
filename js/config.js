@@ -120,9 +120,9 @@ Matheus`,
     }
   ],
   reminders: [
-    ["🐸", "Sapinhos", "Sempre que vejo um sapo, penso em vc kkkkkk"],
-    ["🦫", "Capivaras", "Calmas, unicas e impossiveis de nao amar. Em outras palavras, VOCÊ"],
-    ["🐱", "O gato dela", "O guardiao oficial das nossas memorias."],
+    ["🐸", "Sapichos", "Sempre que vejo um sapo, penso em vc kkkkkk"],
+    ["🦫", "Capivarinhas", "Calmas, unicas e impossiveis de nao amar. Em outras palavras, VOCÊ"],
+    ["🐱", "O gato safado", "O guardiao oficial das nossas memorias."],
     ["🌸", "Flores", "Delicadas, bonitas e com cara de momento guardado."],
     ["🎵", "Michael Jackson", "Porque as vezes o amor tambem precisa de um moonwalk."],
     ["❤️", "Nos dois", "Minha combinacao favorita em qualquer universo."]
@@ -132,7 +132,7 @@ Matheus`,
     Classe: "Pessoa Incrivel",
     Raridade: "Lendaria ⭐⭐⭐⭐⭐",
     Habilidades: ["Fazer eu sorrir", "Melhorar meus dias", "Ser linda sem tentar"],
-    Fraquezas: ["Nenhuma encontrada"],
+    Fraquezas: ["Nenhuma fraqueza identificada."],
     "Poder especial": "Roubar meu coracao"
   },
   stats: [
